@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us · PrimeMar Support</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-banner"></div>
+
+    <!-- Navigation -->
+    <nav class="public-navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fab fa-twitter"></i>
+                <span>PrimeMar</span>
+            </div>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/how-it-works.html">How It Works</a>
+                <a href="/pricing.html">Pricing</a>
+                <a href="/creator-hub.html">Creator Hub</a>
+                <a href="/contact.html" class="active">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="/login.html" class="btn btn-outline">Login</a>
+                <a href="/signup.html" class="btn btn-primary">Join Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>We're Here to Help</h1>
+            <p class="lead">Contact our support team or find answers in our help center</p>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="contact-options">
+        <div class="container">
+            <div class="options-grid">
+                <div class="option-card">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Help Center</h3>
+                    <p>Browse articles and tutorials</p>
+                    <a href="/help.html" class="btn btn-outline">Visit Help Center</a>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Support</h3>
+                    <p>Get a response within 24 hours</p>
+                    <a href="#contact-form" class="btn btn-outline">Send Email</a>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-comment"></i>
+                    <h3>Live Chat</h3>
+                    <p>Chat with support now</p>
+                    <button class="btn btn-outline" onclick="startLiveChat()">Start Chat</button>
+                </div>
+                <div class="option-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone Support</h3>
+                    <p>Mon-Fri, 9am-6pm EST</p>
+                    <a href="tel:+18001234567" class="btn btn-outline">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section" id="contact-form">
+        <div class="container">
+            <div class="form-container">
+                <h2>Send us a message</h2>
+                <form id="contactForm" onsubmit="return submitContactForm(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Your Name *</label>
+                            <input type="text" class="form-input" id="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Your Email *</label>
+                            <input type="email" class="form-input" id="contactEmail" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Subject *</label>
+                        <select class="form-input" id="contactSubject" required>
+                            <option value="">Select a topic</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="account">Account Issues</option>
+                            <option value="payment">Payment & Withdrawals</option>
+                            <option value="verification">Creator Verification</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="report">Report a Problem</option>
+                            <option value="partnership">Partnership Opportunities</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Message *</label>
+                        <textarea class="form-input" id="contactMessage" rows="6" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="contactCopy" checked>
+                            <span class="checkmark"></span>
+                            Send me a copy of this message
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="your-recaptcha-key"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Visit Us</h3>
+                    <p>123 Prime Street<br>San Francisco, CA 94105<br>United States</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9am - 6pm EST<br>Saturday: 10am - 4pm EST<br>Sunday: Closed</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>General: support@primemar.com<br>Press: press@primemar.com<br>Partnerships: partners@primemar.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone</h3>
+                    <p>US: +1 (800) 123-4567<br>UK: +44 20 1234 5678<br>NG: +234 123 456 7890</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Contact -->
+    <section class="admin-contact">
+        <div class="container">
+            <h2>Contact Platform Administrators</h2>
+            <p>For urgent matters, you can reach our admin team directly:</p>
+            <div class="admin-emails">
+                <div class="admin-email">
+                    <strong>Disputes & Appeals:</strong>
+                    <a href="mailto:primemardispute@gmail.com">primemardispute@gmail.com</a>
+                </div>
+                <div class="admin-email">
+                    <strong>General Support:</strong>
+                    <a href="mailto:primemar03@gmail.com">primemar03@gmail.com</a>
+                </div>
+                <div class="admin-email">
+                    <strong>Security Issues:</strong>
+                    <a href="mailto:supremealpha04@gmail.com">supremealpha04@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019847254485!2d-122.419415484681!3d37.774929279759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f7e4d3c3d%3A0x1b7c4f5c9c8f3e3!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1645123456789!5m2!1sen!2sus" 
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How quickly do you respond?</h3>
+                    <p>We aim to respond to all inquiries within 24 hours on business days. Live chat offers immediate assistance.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>I'm having payment issues. Who do I contact?</h3>
+                    <p>For payment-related issues, please email payments@primemar.com or use the contact form with "Payment" as the subject.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I report a user?</h3>
+                    <p>Use the "Report" button on any post or profile, or email security@primemar.com for urgent reports.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I speak to someone on the phone?</h3>
+                    <p>Yes, phone support is available during business hours. Premium creators get priority phone access.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="public-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fab fa-twitter"></i>
+                        <span>PrimeMar</span>
+                    </div>
+                    <p>The social platform where your influence earns real value.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <a href="/about.html">About</a>
+                    <a href="/how-it-works.html">How It Works</a>
+                    <a href="/pricing.html">Pricing</a>
+                    <a href="/creator-hub.html">Creator Hub</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="/contact.html">Contact</a>
+                    <a href="/help.html">Help Center</a>
+                    <a href="/status.html">Platform Status</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="/privacy.html">Privacy Policy</a>
+                    <a href="/terms.html">Terms of Service</a>
+                    <a href="/refund.html">Refund Policy</a>
+                    <a href="/cookie.html">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PrimeMar. All rights reserved. Paystack · Flutterwave</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/utils.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+        function submitContactForm(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMessage').value;
+            const sendCopy = document.getElementById('contactCopy').checked;
+            
+            // Here you would normally send to your backend
+            console.log('Contact form submitted:', { name, email, subject, message, sendCopy });
+            
+            // Show success message
+            alert('Thank you for contacting us! We\'ll respond within 24 hours.');
+            document.getElementById('contactForm').reset();
+            
+            return false;
+        }
+        
+        function startLiveChat() {
+            alert('Live chat would open here. For demo purposes, please email support@primemar.com');
+        }
+    </script>
+</body>
+</html>
