@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing · PrimeMar Creator Plans</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-banner"></div>
+
+    <!-- Navigation -->
+    <nav class="public-navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fab fa-twitter"></i>
+                <span>PrimeMar</span>
+            </div>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/how-it-works.html">How It Works</a>
+                <a href="/pricing.html" class="active">Pricing</a>
+                <a href="/creator-hub.html">Creator Hub</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="/login.html" class="btn btn-outline">Login</a>
+                <a href="/signup.html" class="btn btn-primary">Join Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pricing-hero">
+        <div class="container">
+            <h1>Simple, Transparent Pricing</h1>
+            <p class="lead">Choose the plan that fits your goals. No hidden fees, no surprises.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Toggle -->
+    <div class="pricing-toggle">
+        <div class="container">
+            <div class="toggle-container">
+                <span class="toggle-label monthly active">Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="toggle-label yearly">Yearly <span class="save-badge">Save 20%</span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Cards -->
+    <section class="pricing-cards">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Free Plan -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="0" data-yearly="0">0</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Perfect for getting started</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Basic profile</li>
+                            <li><i class="fas fa-check"></i> Post text & images</li>
+                            <li><i class="fas fa-check"></i> Follow up to 500 users</li>
+                            <li><i class="fas fa-check"></i> Basic analytics</li>
+                            <li><i class="fas fa-check"></i> Earn SA tokens</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Post boosting</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Subscription revenue</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Verified badge</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/signup.html" class="btn btn-outline btn-large">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Creator Plan -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="card-header">
+                        <h3>Creator</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="7" data-yearly="67">7</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For serious content creators</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Starter</li>
+                            <li><i class="fas fa-check"></i> Verified 💠 badge</li>
+                            <li><i class="fas fa-check"></i> Receive subscriptions ($7/month per subscriber)</li>
+                            <li><i class="fas fa-check"></i> Post boosting (100 SA per boost)</li>
+                            <li><i class="fas fa-check"></i> Withdraw earnings</li>
+                            <li><i class="fas fa-check"></i> Advanced analytics</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Custom branding</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/signup.html?plan=creator" class="btn btn-primary btn-large">Become a Creator</a>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="49" data-yearly="499">49</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For brands and businesses</p>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Creator</li>
+                            <li><i class="fas fa-check"></i> Team accounts (up to 5)</li>
+                            <li><i class="fas fa-check"></i> API access</li>
+                            <li><i class="fas fa-check"></i> Custom analytics</li>
+                            <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                            <li><i class="fas fa-check"></i> White-label options</li>
+                            <li><i class="fas fa-check"></i> SLA guarantee</li>
+                            <li><i class="fas fa-check"></i> Early feature access</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/contact.html" class="btn btn-outline btn-large">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-on Services -->
+    <section class="addons-section">
+        <div class="container">
+            <h2 class="section-title">One-Time Services</h2>
+            <div class="addons-grid">
+                <div class="addon-card">
+                    <i class="fas fa-check-circle addon-icon"></i>
+                    <h3>Creator Verification</h3>
+                    <p class="addon-price">$25 one-time</p>
+                    <ul>
+                        <li>Verified 💠 badge</li>
+                        <li>3,000+ followers required</li>
+                        <li>Lifetime verification</li>
+                    </ul>
+                    <a href="/creator-hub.html" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="addon-card">
+                    <i class="fas fa-bolt addon-icon"></i>
+                    <h3>Post Boost</h3>
+                    <p class="addon-price">100 SA per boost</p>
+                    <ul>
+                        <li>48 hours of promotion</li>
+                        <li>5x more visibility</li>
+                        <li>Featured in Boosted feed</li>
+                    </ul>
+                    <a href="/how-it-works.html" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="addon-card">
+                    <i class="fas fa-chart-line addon-icon"></i>
+                    <h3>Advanced Analytics</h3>
+                    <p class="addon-price">$9.99/month</p>
+                    <ul>
+                        <li>Detailed audience insights</li>
+                        <li>Competitor analysis</li>
+                        <li>Growth predictions</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SA Token Value -->
+    <section class="token-value-section">
+        <div class="container">
+            <h2 class="section-title">SA Token Value</h2>
+            <div class="value-card">
+                <div class="value-grid">
+                    <div class="value-item">
+                        <span class="value-label">1 SA =</span>
+                        <span class="value-amount">$0.01 USD</span>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-label">Minimum Withdrawal =</span>
+                        <span class="value-amount">500 SA ($5)</span>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-label">Boost Cost =</span>
+                        <span class="value-amount">100 SA ($1)</span>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-label">Daily Max Earnings =</span>
+                        <span class="value-amount">80 SA ($0.80)</span>
+                    </div>
+                </div>
+                <p class="value-note">*SA token value is fixed at $0.01 USD for withdrawals. Market value may fluctuate.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Comparison -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Compare Plans</h2>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Starter</th>
+                            <th>Creator</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Profile Creation</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Post Text & Images</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Video Posts</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Direct Messaging</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>SA Token Earnings</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Verified Badge 💠</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Subscription Revenue</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Post Boosting</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Withdraw Earnings</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Analytics</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Team Accounts</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>API Access</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Creators Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="/media/avatars/creator1.jpg" alt="Sarah">
+                    </div>
+                    <p class="testimonial-text">"With PrimeMar, I've earned over $500 in SA tokens in just 3 months. The verification badge really helps build trust with my audience."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah K.</strong>
+                        <span class="verified">💠 Verified Creator</span>
+                        <span>15K followers</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="/media/avatars/creator2.jpg" alt="Marcus">
+                    </div>
+                    <p class="testimonial-text">"The boost feature is incredible. I paid 100 SA and reached 50K people in 48 hours. Best investment for my content."</p>
+                    <div class="testimonial-author">
+                        <strong>Marcus T.</strong>
+                        <span class="verified">💠 Verified Creator</span>
+                        <span>28K followers</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="/media/avatars/creator3.jpg" alt="Priya">
+                    </div>
+                    <p class="testimonial-text">"The subscription model changed everything. My 500 subscribers bring in $3,500 monthly recurring revenue. Game changer!"</p>
+                    <div class="testimonial-author">
+                        <strong>Priya M.</strong>
+                        <span class="verified">💠 Verified Creator</span>
+                        <span>42K followers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Pricing FAQ</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Is there a free plan?</h3>
+                    <p>Yes! The Starter plan is completely free with basic features. You can still earn SA tokens and use core platform features.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>We accept all major credit cards, PayPal, Paystack (NGN), and Flutterwave for international payments.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I upgrade from Starter to Creator?</h3>
+                    <p>Absolutely! You can upgrade anytime from your account settings. The verification fee ($25) is a one-time payment.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do I keep my SA tokens if I cancel?</h3>
+                    <p>Yes, earned SA tokens remain in your wallet. You can withdraw them even after canceling your subscription.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is there a refund policy?</h3>
+                    <p>We offer a 30-day money-back guarantee for annual plans. Monthly plans can be cancelled anytime.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is the verification fee for?</h3>
+                    <p>The $25 one-time fee covers identity verification and the cost of maintaining the verified creator program.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to start earning?</h2>
+            <p>Join thousands of creators already monetizing their influence</p>
+            <div class="cta-buttons">
+                <a href="/signup.html" class="btn btn-primary btn-large">Get Started Free</a>
+                <a href="/creator-hub.html" class="btn btn-outline btn-large">Talk to Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="public-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fab fa-twitter"></i>
+                        <span>PrimeMar</span>
+                    </div>
+                    <p>The social platform where your influence earns real value.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <a href="/about.html">About</a>
+                    <a href="/how-it-works.html">How It Works</a>
+                    <a href="/pricing.html">Pricing</a>
+                    <a href="/creator-hub.html">Creator Hub</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="/contact.html">Contact</a>
+                    <a href="/help.html">Help Center</a>
+                    <a href="/status.html">Platform Status</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="/privacy.html">Privacy Policy</a>
+                    <a href="/terms.html">Terms of Service</a>
+                    <a href="/refund.html">Refund Policy</a>
+                    <a href="/cookie.html">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PrimeMar. All rights reserved. Paystack · Flutterwave</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/utils.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+        // Pricing toggle functionality
+        document.getElementById('pricingToggle').addEventListener('change', function(e) {
+            const isYearly = e.target.checked;
+            const amounts = document.querySelectorAll('.amount');
+            
+            document.querySelector('.toggle-label.monthly').classList.toggle('active', !isYearly);
+            document.querySelector('.toggle-label.yearly').classList.toggle('active', isYearly);
+            
+            amounts.forEach(amount => {
+                const monthly = amount.dataset.monthly;
+                const yearly = amount.dataset.yearly;
+                amount.textContent = isYearly ? yearly : monthly;
+            });
+        });
+    </script>
+</body>
+</html>
